@@ -9,7 +9,7 @@
         system = "x86_64-linux";
       };
     in {
-      wine-staging = pkgs.wine-staging.overrideDerivation (oldAttrs: {
+      packages."${system}".wine-lol = pkgs.wine-staging.overrideDerivation (oldAttrs: {
         patches = oldAttrs.patches ++ [
           ./0004-LoL-broken-client-update-fix.patch
           ./0005-LoL-client-slow-start-fix.patch
@@ -17,5 +17,9 @@
           ./0008-ntdll-nopguard-call_vectored_handlers.patch
         ];
       });
+      overlay = final: prev: {
+        inherit (self.packages."${system}") wine-lol;
+      };
     };
 }
+  
