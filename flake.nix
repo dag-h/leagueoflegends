@@ -5,8 +5,9 @@
   
   outputs = { self, nixpkgs }:
     let
+      system = "x86_64-linux";
       pkgs = import nixpkgs {
-        system = "x86_64-linux";
+        inherit system;
       };
     in {
       packages."${system}".wine-lol = pkgs.wine-staging.overrideDerivation (oldAttrs: {
