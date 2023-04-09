@@ -1,28 +1,12 @@
 {
   "nodes": {
-    "leagueoflegends": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1680965286,
-        "narHash": "sha256-63inBRx2FEKkIcYh9CRzh7Q9A1lgXh12AG+zsJIMLfU=",
-        "owner": "kyechou",
-        "repo": "leagueoflegends",
-        "rev": "bd4a4e92fe4a22e17a94271aaaa31ae1f4dcfe98",
-        "type": "github"
-      },
-      "original": {
-        "owner": "kyechou",
-        "repo": "leagueoflegends",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1681052696,
-        "narHash": "sha256-iEejcTkWxy/InoU5jDXCisTY+rHdJ79V4HpXNIUnqeE=",
+        "lastModified": 1681060046,
+        "narHash": "sha256-4PxRrkpFsM/CENghOOa4RAvEm+5BLN8gIkPUEA/LOPM=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "c217fb605fca88042ff80af3f666521de7a8003e",
+        "rev": "be76fdd339b4a6686baefce6614849449082ff1a",
         "type": "github"
       },
       "original": {
@@ -33,7 +17,6 @@
     },
     "root": {
       "inputs": {
-        "leagueoflegends": "leagueoflegends",
         "nixpkgs": "nixpkgs"
       }
     }

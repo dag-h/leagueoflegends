@@ -3,7 +3,7 @@
     nixpkgs.url = github:nixos/nixpkgs;
   };
   
-  outputs = { self, nixpkgs, leagueoflegends }:
+  outputs = { self, nixpkgs }:
     let
       pkgs = import nixpkgs {
         system = "x86_64-linux";
