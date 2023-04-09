@@ -10,7 +10,7 @@
         inherit system;
       };
     in {
-      packages."${system}".wine-lol = pkgs.wine-staging.overrideDerivation (oldAttrs: {
+      packages."${system}".wine-lol = pkgs.wineWowPackages.staging.overrideDerivation (oldAttrs: {
         patches = oldAttrs.patches ++ [
           ./0004-LoL-broken-client-update-fix.patch
           ./0005-LoL-client-slow-start-fix.patch
